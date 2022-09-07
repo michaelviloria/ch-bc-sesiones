@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+  - const titlePage = "Login";
+  include layout/head.pug
+  body 
+    h1 Ingresa tu nombre para poder acceder.
+    form(action="/" method="post")
+      input(type="text" name="name" placeholder="¿cual es tu nombre?")
+      button(type="submit") Enviar
